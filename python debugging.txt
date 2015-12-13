@@ -1,0 +1,30 @@
+Python debugger
+https://docs.python.org/2/library/pdb.html
+
+pdb commands
+http://web.stanford.edu/class/physics91si/2013/handouts/Pdb_Commands.pdf
+
+
+You can launch a Python program through pdb by using pdb myscript.py or python -m pdb myscript.py.
+
+There are a few commands you can then issue, which are documented on the pdb page.
+
+Some useful ones to remember are:
+
+b: set a breakpoint
+c: continue debugging until you hit a breakpoint
+s: step through the code
+n: to go to next line of code
+l: list source code for the current file (default: 11 lines including the line being executed)
+u: navigate up a stack frame
+d: navigate down a stack frame
+p: to print the value of an expression in the current context
+If you don't want to use a command line debugger, some IDEs like Pydev have a GUI debugger.
+
+import pdb
+pdb.set_trace()
+
+Look at the sys.settrace() documentation for more details. 
+Tutorial:
+https://pymotw.com/2/sys/tracing.html
+
